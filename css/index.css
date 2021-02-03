@@ -31,13 +31,11 @@ a{color: var(--bg-black)}
     to{opacity: 1; }
 }
 
-
-
 /* header */
-.typed{display: inline-block; font-size: .9em;}
-#gnb{ padding: 50px 20px; box-sizing: border-box}
+.typed{ font-size: .9em;}
+#gnb{ padding: 50px 20px; box-sizing: border-box; transition: all .5s}
 #gnb .typed{float: left}
-#gnb .nav_menu{float: right}
+#gnb .nav_menu{float: right; overflow: hidden;}
 #gnb .nav_menu li{float: left; font-size: 1.2em; padding-left: 40px}
 #gnb .nav_menu li a{transition: all .3s}
 #gnb .nav_menu li:hover a{color: var(--bg-purple)}
@@ -51,12 +49,13 @@ a{color: var(--bg-black)}
 
 /* home */
 .home{width: 100%; height: 950px;  background-color: var(--bg-gray);}
-.home_left{float: left; width: 60%; height: 622px; text-align: center; padding-top: 14%}
+.home_left{float: right; width: 60%; height: 622px; text-align: center; }
+.home_left h1{padding-top: 212px;}
 .home_left h2 span{display: inline-block;  font-size: 1em; font-weight: 500; font-family: 'Poppins', sans-serif;}
-.home_right{float: left; width: 40%; height: 622px; background: url(../img/얼굴.jpg) no-repeat bottom center; background-size: cover;}
+.home_right{float: right; width: 40%; height: 622px; background: url(../img/얼굴.jpg) no-repeat bottom center; background-size: cover;}
 
 /* profile */
-.profile{width: 100%; height: 1500px; background-color: var(--bg-white)}
+.profile{width: 100%;height: 3000px; background-color: var(--bg-white)}
 .profile .container{padding-left: 20px; padding-right: 20px;box-sizing: border-box}
 .intro{padding: 100px}
 .intro_img{display: flex; width: 100%; justify-content: space-around; }
@@ -64,15 +63,32 @@ a{color: var(--bg-black)}
 .img_border img{width: 100%; height: 100%; }
 .img_border span{display: block; text-align: center; margin-top: 45px; color: var(--bg-purple); font-weight: bold; font-size: 1.1em}
 
-.introduce{text-align: center; padding: 100px; box-sizing: border-box; line-height: 200%}
+.introduce{text-align: center; padding: 100px; box-sizing: border-box; line-height: 200%; width: 100%; background-color: var(--bg-white);}
 
-.me{padding: 100px; display: flex; padding-left: 100px}
+/* skills */
+h3{color: var(--bg-purple); width: 100px; border-bottom: 3px solid var(--bg-purple)}
+.front_skills{padding: 50px}
+.skills_block{display: grid; width: 90%; grid-gap: 35px; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); grid-template-rows: repeat(2, 120px); margin: 0 auto; padding: 60px 0;}
+.skills_block div{text-align: center;}
+.skills_block div p{text-align: center; color: var(--bg-black)}
+.skills_block span{width: 90px; height: 90px; display: inline-block; border-radius: 50%; overflow: hidden; }
+.skills_block span.html5{background: url(../img/html5.png) no-repeat center/84%;}
+.skills_block span.css3{background: url(../img/css.png) no-repeat center/84%;}
+.skills_block span.javascript{background: url(../img/javascript.png) no-repeat center/62%;}
+.skills_block span.es6{background: url(../img/es6.png) no-repeat center/190%;}
+.skills_block span.jquery{background: url(../img/jquery.png) no-repeat center/84%;}
+.skills_block span.scss{background: url(../img/sass.png) no-repeat center/84%;}
+.skills_block span.babel{background: url(../img/babel.jpg) no-repeat center/100%;}
+.skills_block span.pug{background: url(../img/pug.png) no-repeat left/208%;}
+.back_skills{padding: 50px}
+
+
+.me{padding: 100px; display: flex; padding-left: 100px;}
 .me .me_img img{border-radius: 50%;}
 .me .me_txt{ padding-top: inherit; }
 .me .me_txt li{font-size: 1em; line-height: 200%; padding-top: inherit; font-family: 'Noto Sans KR', sans-serif; font-weight: 300}
 .me .me_txt li::before{content:"▪ "}
 
-.introduce{width: 100%; background-color: var(--bg-white);}
 
 /* project */
 .project{width: 100%;  height: 1500px; background-color: var(--bg-gray)}
@@ -82,7 +98,7 @@ a{color: var(--bg-black)}
 .contact{width: 100%; height: 1500px;  background-color: yellow;}
 
 /* footer */
-#footer{width: 100%; height: 150px; background-color:var(--bg-black); color:var(--bg-white); }
+#footer{width: 100%;  background-color:var(--bg-black); color:var(--bg-white); }
 #footer .container{display: flex; line-height: 150px; padding-left: 20px; padding-right: 20px; box-sizing: border-box;}
 #footer .foot_txt{margin: 0 auto; }
 #footer .sns{display: flex;}
