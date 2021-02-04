@@ -36,7 +36,7 @@
   .home_left h1.em{font-size: 3em; padding-top: 0}
   .home_left h2{font-size: 1.4em;color: #000}
   .home_left h2 span.highlight{color: #000}
-  .home_right{background-size: contain}
+  .home_right{background-size: cover}
  
 }
 
@@ -47,9 +47,11 @@
 }
 
 @media all and (max-width: 580px) {
-  
   .intro{display: none;}
   .me .me_img img{width: 100%;}
+  .contact h3{font-size: .8em;}
+  .contact .contact_box{font-size: 1.2em; }
+  .contact .contact_box i{font-size: 1em; }
 }
 
 @media all and (max-width: 520px) {
@@ -61,8 +63,9 @@
 }
 
 @media all and (max-width: 375px) {
+  .home_left{margin-top: 100px;}
   .home_left h1.em{font-size: 2.3em}
-  .home_right{height: 450px;}
+  .home_right{height:360px; position: relative; top: 75px}
   .profile h2, .project h2, .contact h2{font-size: 3em}
   .profile .container div{padding: 20px 9px;} 
 }

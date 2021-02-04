@@ -8,7 +8,8 @@
 }
 
 /* 레이아웃 */
-#header{width: 100%; height: 140; background-color: var(--bg-gray);}
+#header{width: 100%;  background-color: var(--bg-gray);}
+#content{width: 100%;}
 #gnb{width: 100%; height: 140px; background-color: var(--bg-gray);}
 
 
@@ -29,6 +30,12 @@ a{color: var(--bg-black)}
 @keyframes shows{
     from{opacity: 0; }
     to{opacity: 1; }
+}
+
+.up{animation: .5s up infinite alternate linear}
+@keyframes up{
+    from{top: 0}
+    to{top: -10px;}
 }
 
 /* header */
@@ -55,7 +62,7 @@ a{color: var(--bg-black)}
 .home_right{float: right; width: 40%; height: 622px; background: url(../img/얼굴.jpg) no-repeat bottom center; background-size: cover;}
 
 /* profile */
-.profile{width: 100%;height: 3000px; background-color: var(--bg-white)}
+.profile{width: 100%;height: auto; background-color: var(--bg-white)}
 .profile .container{padding-left: 20px; padding-right: 20px;box-sizing: border-box}
 .intro{padding: 100px}
 .intro_img{display: flex; width: 100%; justify-content: space-around; }
@@ -63,12 +70,12 @@ a{color: var(--bg-black)}
 .img_border img{width: 100%; height: 100%; }
 .img_border span{display: block; text-align: center; margin-top: 45px; color: var(--bg-purple); font-weight: bold; font-size: 1.1em}
 
-.introduce{text-align: center; padding: 100px; box-sizing: border-box; line-height: 200%; width: 100%; background-color: var(--bg-white);}
+.introduce{text-align: center; padding: 100px; box-sizing: border-box; line-height: 200%; width: 100%; background-color: var(--bg-white); border-bottom: 2px dotted var(--bg-gray);}
 
 /* skills */
-h3{color: var(--bg-purple); width: 100px; border-bottom: 3px solid var(--bg-purple)}
+.frount_skills h3 span{color: var(--bg-black); border-bottom: 1px solid var(--bg-black)}
 .front_skills{padding: 50px}
-.skills_block{display: grid; width: 90%; grid-gap: 35px; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); grid-template-rows: repeat(2, 120px); margin: 0 auto; padding: 60px 0;}
+.skills_block{display: grid; width: 90%; grid-gap: 35px; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); margin: 0 auto; padding: 60px 0;}
 .skills_block div{text-align: center;}
 .skills_block div p{text-align: center; color: var(--bg-black)}
 .skills_block span{width: 90px; height: 90px; display: inline-block; border-radius: 50%; overflow: hidden; }
@@ -80,8 +87,11 @@ h3{color: var(--bg-purple); width: 100px; border-bottom: 3px solid var(--bg-purp
 .skills_block span.scss{background: url(../img/sass.png) no-repeat center/84%;}
 .skills_block span.babel{background: url(../img/babel.jpg) no-repeat center/100%;}
 .skills_block span.pug{background: url(../img/pug.png) no-repeat left/208%;}
-.back_skills{padding: 50px}
 
+.back_skills{padding: 50px; border-bottom: 2px dotted var(--bg-gray);}
+.skills_block span.nodejs{background: url(../img/node.png) no-repeat center/84%;}
+.skills_block span.express{background: url(../img/express.png) no-repeat center/84%;}
+.skills_block span.git{background: url(../img/git.png) no-repeat center/84%;}
 
 .me{padding: 100px; display: flex; padding-left: 100px;}
 .me .me_img img{border-radius: 50%;}
@@ -95,14 +105,21 @@ h3{color: var(--bg-purple); width: 100px; border-bottom: 3px solid var(--bg-purp
 .project .container{padding-left: 20px; padding-right: 20px; box-sizing: border-box}
 
 /* contact */
-.contact{width: 100%; height: 1500px;  background-color: yellow;}
+.contact{width: 100%; height: auto;}
+.contact .container{padding: 0 20px; box-sizing: border-box}
+.contact h3{font-size:1em; color: var(--bg-black); text-align: center; font-weight: 400; padding:40px 0;}
+.contact h3 span{position: relative; top: 0; left: 0;}
+.contact .contact_box{width:100%; margin: 0 auto; text-align: center; font-size: 1.4em; color: var(--bg-black); padding-top: 40px; margin-bottom: 100px; font-weight: 600}
+.contact .contact_box li{padding-bottom: 25px}
+.contact .contact_box i{font-size: 1.3em; color: rgb(5, 63, 172)}
+
 
 /* footer */
 #footer{width: 100%;  background-color:var(--bg-black); color:var(--bg-white); }
 #footer .container{display: flex; line-height: 150px; padding-left: 20px; padding-right: 20px; box-sizing: border-box;}
 #footer .foot_txt{margin: 0 auto; }
 #footer .sns{display: flex;}
-#footer .sns img{width: 55px; height: 55px; border-radius: 25%; margin-left: 15px; vertical-align: middle;} 
+#footer .sns img{width: 55px; height: 55px; border-radius: 13%; margin-left: 15px; vertical-align: middle;} 
 
 
 
