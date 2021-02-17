@@ -49,9 +49,12 @@
 @media all and (max-width: 580px) {
   .intro{display: none;}
   .me .me_img img{width: 100%;}
-  .contact h3{font-size: .8em;}
+  .contact h3, .project h3{font-size: .8em;}
   .contact .contact_box{font-size: 1.2em; }
   .contact .contact_box i{font-size: 1em; }
+  .project_box{grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));}
+  .project_box .project_block{width: 325px; }
+  .project_bg em{font-size: 2em}
 }
 
 @media all and (max-width: 520px) {

@@ -2,6 +2,7 @@
 
 :root{
     --bg-gray: #F2F2F2;
+    --bg-dgray: #dddddd;
     --bg-white: #ffffff;
     --bg-purple: #8C98FF;
     --bg-black: #303030;
@@ -40,7 +41,7 @@ a{color: var(--bg-black)}
 
 /* header */
 .typed{ font-size: .9em;}
-#gnb{ padding: 50px 20px; box-sizing: border-box; transition: all .5s}
+#gnb{ padding: 50px 20px; box-sizing: border-box; transition: all .5s; z-index: 10;}
 #gnb .typed{float: left}
 #gnb .nav_menu{float: right; overflow: hidden;}
 #gnb .nav_menu li{float: left; font-size: 1.2em; padding-left: 40px}
@@ -92,6 +93,7 @@ a{color: var(--bg-black)}
 .skills_block span.nodejs{background: url(../img/node.png) no-repeat center/84%;}
 .skills_block span.express{background: url(../img/express.png) no-repeat center/84%;}
 .skills_block span.git{background: url(../img/git.png) no-repeat center/84%;}
+.skills_block span.php{background: url(../img/php.png) no-repeat center/84%;}
 
 .me{padding: 100px; display: flex; padding-left: 100px;}
 .me .me_img img{border-radius: 50%;}
@@ -102,13 +104,30 @@ a{color: var(--bg-black)}
 
 /* project */
 .project{width: 100%;  height: 1500px; background-color: var(--bg-gray)}
+.project h3{font-size: 1em;color: var(--bg-black);text-align: center;font-weight: 400;padding: 40px 0;}
 .project .container{padding-left: 20px; padding-right: 20px; box-sizing: border-box}
+.project_box{display: grid; grid-gap: 50px 1px;grid-template-columns: repeat(auto-fit, minmax(530px, 1fr)); margin: 0 auto; padding: 60px 0; place-items: center;}
+.project_box .project_block{width: 530px; height: 330px; border-radius:10px;   text-align: center; position: relative; transition: all .5s; top: 0; background: #fff}
+.project_box .project_block:hover{box-shadow: 0 3px 10px 1px var(--bg-dgray); top: -10px}
+.project_bg{width: 100%; height: 60%; background: rgb(121, 231, 121); border-radius: 10px 10px 0 0; border-bottom: 1px solid var(--bg-gray)}
+.project_bg em{color: #fff;font-size: 2.6em;font-style: normal;font-weight: 600;line-height: 180px;}
+.project_cont{width: 100%; height: 40%; border-radius: 0 0 10px 10px}
+.project_cont span{padding-top: 22px; color: var(--bg-black); display: block}
+.project_cont .projectBtn{display: flex; justify-content: center ;margin-top: 15px; }
+.project_cont .projectBtn a{border: 1px solid var(--bg-dgray); padding: 5px; display: block; width: 18%;border-radius: 10px; margin-left: 10px; transition: all .3s}
+.project_cont .projectBtn a:hover{background-color: var(--bg-dgray); }
+.ediya .project_bg{background-color: #1c3269;}
+.drseed .project_bg{background-color: #338645;}
+.prep .project_bg{background-color: var(--bg-purple);}
+
+
+
 
 /* contact */
 .contact{width: 100%; height: auto;}
 .contact .container{padding: 0 20px; box-sizing: border-box}
 .contact h3{font-size:1em; color: var(--bg-black); text-align: center; font-weight: 400; padding:40px 0;}
-.contact h3 span{position: relative; top: 0; left: 0;}
+.contact h3 span{position: relative; top: 0; left: 0; z-index: -1}
 .contact .contact_box{width:100%; margin: 0 auto; text-align: center; font-size: 1.4em; color: var(--bg-black); padding-top: 40px; margin-bottom: 100px; font-weight: 600}
 .contact .contact_box li{padding-bottom: 25px}
 .contact .contact_box i{font-size: 1.3em; color: rgb(5, 63, 172)}

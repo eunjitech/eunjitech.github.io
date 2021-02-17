@@ -14,8 +14,3 @@ a{text-decoration: none}
 .wa{display: block; overflow: hidden; width: 100%; height: 100%; position: relative; z-index: -1}
 /* 대체 텍스트가 아닌 접근성을 위한 숨김 */
 .so{width: 0; height: 0; text-indent: -9999px; line-height: 0; overflow: hidden; position: absolute}
-
-#skip { z-index: 999999999; position: absolute; top: 0; left: 0; width: 100% }
-#skip>li { font-size: 0 }
-#skip>li>a { display: block; width: 100%; padding: 0; font-size: 0; background: #000; color: #fff; text-align: center }
-#skip>li>a:focus { padding: 10px 0; font-size: 17px; font-family: 'Roboto', 'Noto Sans KR', sans-serif;  }
