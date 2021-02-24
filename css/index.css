@@ -95,7 +95,7 @@ a{color: var(--bg-black)}
 .skills_block span.git{background: url(../img/git.png) no-repeat center/84%;}
 .skills_block span.php{background: url(../img/php.png) no-repeat center/84%;}
 
-.me{padding: 100px; display: flex; padding-left: 100px;}
+.me{padding: 100px; display: flex; padding-left: 100px;justify-content: center;}
 .me .me_img img{border-radius: 50%;}
 .me .me_txt{ padding-top: inherit; }
 .me .me_txt li{font-size: 1em; line-height: 200%; padding-top: inherit; font-family: 'Noto Sans KR', sans-serif; font-weight: 300}
@@ -103,11 +103,11 @@ a{color: var(--bg-black)}
 
 
 /* project */
-.project{width: 100%;  height: 1500px; background-color: var(--bg-gray)}
+.project{width: 100%; background-color: var(--bg-gray)}
 .project h3{font-size: 1em;color: var(--bg-black);text-align: center;font-weight: 400;padding: 40px 0;}
 .project .container{padding-left: 20px; padding-right: 20px; box-sizing: border-box}
-.project_box{display: grid; grid-gap: 50px 1px;grid-template-columns: repeat(auto-fit, minmax(530px, 1fr)); margin: 0 auto; padding: 60px 0; place-items: center;}
-.project_box .project_block{width: 530px; height: 330px; border-radius:10px;   text-align: center; position: relative; transition: all .5s; top: 0; background: #fff}
+.project_box{display: grid; grid-gap: 50px 1px;grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); margin: 0 auto; padding: 60px 0; place-items: center;}
+.project_box .project_block{width: 460px; height: 330px; border-radius:10px;   text-align: center; position: relative; transition: all .5s; top: 0; background: #fff}
 .project_box .project_block:hover{box-shadow: 0 3px 10px 1px var(--bg-dgray); top: -10px}
 .project_bg{width: 100%; height: 60%; background: rgb(121, 231, 121); border-radius: 10px 10px 0 0; border-bottom: 1px solid var(--bg-gray)}
 .project_bg em{color: #fff;font-size: 2.6em;font-style: normal;font-weight: 600;line-height: 180px;}
@@ -118,13 +118,14 @@ a{color: var(--bg-black)}
 .project_cont .projectBtn a:hover{background-color: var(--bg-dgray); }
 .ediya .project_bg{background-color: #1c3269;}
 .drseed .project_bg{background-color: #338645;}
-.prep .project_bg{background-color: var(--bg-purple);}
+.prep .project_bg{background-color: rgba(74, 15, 109, 0.835);}
+.note .project_bg{background-color: rgb(42, 40, 44);}
 
 
 
 
 /* contact */
-.contact{width: 100%; height: auto;}
+.contact{width: 100%; }
 .contact .container{padding: 0 20px; box-sizing: border-box}
 .contact h3{font-size:1em; color: var(--bg-black); text-align: center; font-weight: 400; padding:40px 0;}
 .contact h3 span{position: relative; top: 0; left: 0; z-index: -1}
