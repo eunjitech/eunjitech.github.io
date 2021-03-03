@@ -88,7 +88,7 @@ a{color: #303030; color: var(--bg-black)}
 .skills_block span.jquery{background: url(../img/jquery.png) no-repeat center/84%;}
 .skills_block span.scss{background: url(../img/sass.png) no-repeat center/84%;}
 .skills_block span.babel{background: url(../img/babel.jpg) no-repeat center/100%;}
-.skills_block span.pug{background: url(../img/pug.png) no-repeat left/208%;}
+.skills_block span.pug{background: url(../img/pug.png) no-repeat left/239%;}
 
 .back_skills{padding: 50px; border-bottom: 2px dotted #f2f2f2; border-bottom: 2px dotted var(--bg-gray);}
 .skills_block span.nodejs{background: url(../img/node.png) no-repeat center/84%;}
@@ -117,6 +117,7 @@ a{color: #303030; color: var(--bg-black)}
 .project_cont .projectBtn{display: flex; justify-content: center ;margin-top: 15px; }
 .project_cont .projectBtn a{border: 1px solid #dddddd; border: 1px solid var(--bg-dgray); padding: 5px; display: block; width: 18%;border-radius: 10px; margin-left: 10px; transition: all .3s}
 .project_cont .projectBtn a:hover{background-color: #dddddd; background-color: var(--bg-dgray); }
+.calendar .project_bg{background-color:rgb(95, 159, 243)}
 .ediya .project_bg{background-color: #1c3269;}
 .drseed .project_bg{background-color: #338645;}
 .prep .project_bg{background-color: rgba(74, 15, 109, 0.835);}
@@ -130,9 +131,11 @@ a{color: #303030; color: var(--bg-black)}
 .contact .container{padding: 0 20px; box-sizing: border-box}
 .contact h3{font-size:1em;color: #303030; color: var(--bg-black); text-align: center; font-weight: 400; padding:40px 0;}
 .contact h3 span{position: relative; top: 0; left: 0; z-index: -1}
-.contact .contact_box{width:100%; margin: 0 auto; text-align: center; font-size: 1.4em;color: #303030; color: var(--bg-black); padding-top: 40px; margin-bottom: 100px; font-weight: 600}
+
+.contact .contact_box{width:100%; text-align: center; font-size: 1.4em;color: #303030; color: var(--bg-black); padding-top: 40px; margin-bottom: 100px; font-weight: 600}
 .contact .contact_box li{padding-bottom: 25px}
 .contact .contact_box i{font-size: 1.3em; color: rgb(5, 63, 172)}
+
 
 
 /* footer */

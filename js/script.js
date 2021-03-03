@@ -40,16 +40,3 @@ phoneText.addEventListener('mouseleave', function(){
     phone.classList.remove('up');
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
