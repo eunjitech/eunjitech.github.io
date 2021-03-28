@@ -2,12 +2,22 @@ $ = jQuery;
 $(function(){
      //글자쓰는 플러그인
      $('.typed-cursor').typed({
-        strings:["\<h1>hello, Eunji World🌎\</h1>"],
-        typeSpeed: 100,
+        strings:["\"노력은 '설명'하는 것이 아닌 '증명'하는 것입니다.\" \<br\>현실에 안주하지 않고, 증명하기 위해 노력하는 개발자가 되겠습니다."],
+        typeSpeed: 70,
         backDelay:200,
         loop:false
-    });
+    })
+
+    //텍스트효과
+    $(".txt_color").html(function (i, html) {
+        var chars = $.trim(html).split("");
+      
+        return "<span>" + chars.join("</span><span>") + "</span>";
+      });
+      
 });
+
+
 
 const tabList = document.querySelectorAll('.nav_menu li');
 

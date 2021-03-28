@@ -42,9 +42,10 @@ a{color: #303030; color: var(--bg-black)}
 }
 
 /* header */
-.typed h1{font-size: 1.3em; }
 #gnb{ padding: 50px 20px; box-sizing: border-box; transition: all .5s; z-index: 10;}
-#gnb .typed{float: left}
+#gnb h1{float: left; font-size: .8em; transition: all 1s}
+#gnb h1 a{transition: all .3s}
+#gnb h1:hover a{color: var(--bg-purple)}
 #gnb .nav_menu{float: right; overflow: hidden;}
 #gnb .nav_menu li{float: left; font-size: 1.2em; padding-left: 40px}
 #gnb .nav_menu li a{transition: all .3s}
@@ -60,8 +61,9 @@ a{color: #303030; color: var(--bg-black)}
 /* home */
 .home{width: 100%; height: 950px; background-color: #F2F2F2; background-color: var(--bg-gray);}
 .home_left{float: right; width: 60%; height: 622px; text-align: center; }
-.home_left h1{padding-top: 212px;}
-.home_left h2 span{display: inline-block;  font-size: 1em; font-weight: 500; font-family: 'Poppins', sans-serif;}
+.home_left h1{padding-top: 212px; font-family: 'Shrikhand', cursive;
+}
+.home_left h2{display: inline;  font-size: 1.5em; font-weight: 500; font-family: 'Poppins', sans-serif;}
 .home_right{float: right; width: 40%; height: 622px; background: url(../img/얼굴.jpg) no-repeat bottom center; background-size: cover;}
 
 /* profile */
@@ -126,7 +128,7 @@ a{color: #303030; color: var(--bg-black)}
 
 
 /* contact */
-.contact{width: 100%; }
+.contact{width: 100%; background: var(--bg-gray);}
 .contact .container{padding: 0 20px; box-sizing: border-box; }
 .contact h3{font-size:1em;color: #303030; color: var(--bg-black); text-align: center; font-weight: 400; padding:40px 0;}
 .contact h3 span{position: relative; top: 0; left: 0; z-index: -1}
