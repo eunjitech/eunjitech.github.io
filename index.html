@@ -21,6 +21,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/typed.js"></script>
     <script src="https://kit.fontawesome.com/435f472c67.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="js/email.js"></script>
     <script src="js/script.js" defer></script>
 
 </head>
@@ -55,15 +57,15 @@
         <section class="profile content move">
             <div class="container">
                 <h2>Profile</h2>
-                <div class="intro">
+                <!-- <div class="intro">
                     <div class="intro_img">
                         <div class="img_border"><img src="img/ca1.png" alt="intro img"><span>독창성</span></div>
                         <div class="img_border"><img src="img/ca2.png" alt="intro img"><span>문제해결<br> 능력</span></div>
                         <div class="img_border"><img src="img/ca3.png" alt="intro img"><span>발전<br> 가능성</span></div>
                     </div>
-                </div>
+                </div> -->
                 <div class="introduce">
-                    안녕하세요 프론트엔드 개발자 이은지입니다. <br>
+                    안녕하세요. 프론트엔드 개발자 이은지입니다. <br>
                     6개월간의 프론트엔드 국비과정을 밟아오면서 마크업 및 반응형 웹과 javascript를 이용한 동적 웹페이지를 만들고, 개인적인 프로젝트도 만들면서 개발역량을 쌓아왔습니다.
                     <br><br>
                     가장 자신있는 언어는 javascript 입니다. 최근에는 프론트엔드 뿐 만 아니라 백엔드 부분에도 관심이 생겨 하나씩 공부해나가고 있습니다. <br>
@@ -149,7 +151,7 @@
         </section>
         <section class="project content move">
             <div class="container">
-                <h2 class="con_title">Project</h2>
+                <h2 class="con_title">Projects</h2>
                 <div>
                     <h3>📢게시된 모든 포트폴리오는 영리적 이익을 추구하지 않습니다.</h3>
                     <ul class="project_box">
@@ -236,24 +238,38 @@
                 <h2 class="con_title">Contact</h2>
                 <h3>구인관련 및 궁금한 점이 있으시다면, 아래 연락처를 통해 연락 바랍니다 <span>📞</span></h3>
 
-
-                <div class="contact_box">
-                    <ul>
-                        <li>
-                            <i class="fas fa-mobile-alt"></i><br>
-                            <span>+82 10 9633 1879</span>
-                        </li>
-                        <li>
-                            <i class="far fa-envelope"></i><br>
-                            <a href="mailto:eunjitech@gmail.com">eunjitech@gmail.com</a>
-                        </li>
-                        <li>
-                            <i class="fab fa-github"></i><br>
-                            <a href="https://github.com/eunjitech" target="_blank">https://github.com/eunjitech</a>
-                        </li>
-                    </ul>
-
-                </div>
+                <div class="contact_container">
+                    <div class="contact_box">
+                        <ul>
+                            <li>
+                                <i class="fas fa-mobile-alt"></i><br>
+                                <span>+82 10 9633 1879</span>
+                            </li>
+                            <li>
+                                <i class="far fa-envelope"></i><br>
+                                <a href="mailto:eunjitech@gmail.com">eunjitech@gmail.com</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-github"></i><br>
+                                <a href="https://github.com/eunjitech" target="_blank">https://github.com/eunjitech</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact_form">
+                        <form id="contact-form">
+                            <input type="hidden" name="contact_number">
+                    
+                            <input type="text" name="user_name" placeholder="*Name" class="input_name">
+                    
+                            <input type="email" name="user_email" placeholder="*Email" class="input_email">
+                    
+                            <textarea name="message" placeholder="*Message" class="input_message"></textarea>
+                    
+                            <input type="submit" value="Send" class="send">
+                        </form>
+                        <span class="input_error none"></span>
+                    </div>
+              </div>  
             </div>
         </section>
     </content>

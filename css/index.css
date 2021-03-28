@@ -21,6 +21,7 @@ a{color: #303030; color: var(--bg-black)}
 .container{width: 1620px; margin: 0 auto; }
 
 .active{display: block}
+.none{display: none}
 .btn{float: left; font-size: 1.2em; padding-left: 40px; }
 .btn a{color: #303030; color: var(--bg-black)}
 .checked a{color: #8C98FF; color: var(--bg-purple)}
@@ -124,17 +125,23 @@ a{color: #303030; color: var(--bg-black)}
 .note .project_bg{background-color: rgb(42, 40, 44);}
 
 
-
-
 /* contact */
 .contact{width: 100%; }
-.contact .container{padding: 0 20px; box-sizing: border-box}
+.contact .container{padding: 0 20px; box-sizing: border-box; }
 .contact h3{font-size:1em;color: #303030; color: var(--bg-black); text-align: center; font-weight: 400; padding:40px 0;}
 .contact h3 span{position: relative; top: 0; left: 0; z-index: -1}
-
-.contact .contact_box{width:100%; text-align: center; font-size: 1.4em;color: #303030; color: var(--bg-black); padding-top: 40px; margin-bottom: 100px; font-weight: 600}
+.contact_container{display: flex;justify-content: center; margin-top: 5%}
+.contact .contact_box{ text-align: center; font-size: 1.4em;color: #303030; color: var(--bg-black); margin-bottom: 100px; }
 .contact .contact_box li{padding-bottom: 25px}
 .contact .contact_box i{font-size: 1.3em; color: rgb(5, 63, 172)}
+.contact .contact_box span, .contact .contact_box a{font-size: 1rem;}
+.contact .contact_form {margin-left: 5%; position: relative}
+.contact .contact_form input{padding: 5px; box-sizing:border-box; font-size: 1rem; width: 41%; border: 1px solid #ddd;}
+.contact .contact_form textarea{padding: 5px; box-sizing:border-box; font-size: 1rem; display: block; margin-top: 10px; resize: none; width: 83.6%; border: 1px solid #ddd; height: 160px;}
+.contact .contact_form input.send{margin-top: 10px; font-size: 1em; width: 83.6%; background-color:rgb(5, 63, 172) ; color: var(--bg-white)}
+.contact .contact_form input.send:hover{cursor: pointer;}
+.contact .contact_form input.input_email{margin-left: 6px}
+.contact .contact_form .input_error{font-size: .6em; position: absolute; top: -23px; color: red; animation: shows 1s;}
 
 
 
