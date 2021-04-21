@@ -5,7 +5,7 @@ HTML5/CSS3/Javascript로 구현한 포트폴리오 사이트입니다.
 ## Awards
 
 <img src="./dev_file/award.png" width="200"><br>
-코린이상 감사합니다!!! <br>
+노마드코더 SHOWME PORTFOLIO - 코린이상 감사합니다!!! <br>
 👉 [참가내역](https://nomadcoders.co/community/thread/565)
 
 서비스 소개:
