@@ -4,7 +4,7 @@ HTML5/CSS3/Javascript로 구현한 포트폴리오 사이트입니다.
 
 ## Awards
 
-<img src="./award.png" width="200"><br>
+<img src="./dev_file/award.png" width="200"><br>
 코린이상 감사합니다!!! <br>
 👉 [참가내역](https://nomadcoders.co/community/thread/565)
 
@@ -24,7 +24,7 @@ HTML5/CSS3/Javascript로 구현한 포트폴리오 사이트입니다.
 
 ## Preview
 
-<img src = "./preview.png" width="500" />
+<img src = "./dev_file/preview.png" width="500" />
 
 ## Go to page
 
