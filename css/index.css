@@ -599,7 +599,7 @@ a {
   position: relative;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 99;
 }
 
 #modal .modal_layer {
