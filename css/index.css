@@ -630,7 +630,6 @@ a {
 #modal .modal_content video {
   width: 100%;
   border: 1px solid var(--bg-dgray);
-  border-radius: 10px;
 }
 
 #modal .modal_button {
