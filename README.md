@@ -12,10 +12,10 @@ HTML5/CSS3/Javascript로 구현한 포트폴리오 사이트입니다.
 
 ## Pages
 
-[x] Home
+- [x] Home
 
-[x] Profile
+- [x] Profile
 
-[x] Project
+- [x] Project
 
-[x] Contact
+- [x] Contact
