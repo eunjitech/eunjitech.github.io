@@ -29,6 +29,18 @@
 </head>
 
 <body>
+    <div id="modal" class="none">
+        <div class="modal_content">
+            <div class="wetube_modal">
+                <h2>Preview</h2>
+                <video src="./wetube_preview.mp4" controls=true></video>
+                <span>⚙️ 실행과정 : 로그인 > 동영상 업로드 > 동영상 수정 > 댓글 작성 > 댓글 삭제 > 검색 > 프로필 수정</span>
+            </div>
+            <button class="modal_button"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal_layer"></div>
+    </div>
+
     <header id="header">
         <div class="container">
             <nav id="gnb">
@@ -56,13 +68,6 @@
         <section class="profile content move">
             <div class="container">
                 <h2>Profile</h2>
-                <!-- <div class="intro">
-                    <div class="intro_img">
-                        <div class="img_border"><img src="img/ca1.png" alt="intro img"><span>독창성</span></div>
-                        <div class="img_border"><img src="img/ca2.png" alt="intro img"><span>문제해결<br> 능력</span></div>
-                        <div class="img_border"><img src="img/ca3.png" alt="intro img"><span>발전<br> 가능성</span></div>
-                    </div>
-                </div> -->
                 <div class="introduce">
                     안녕하세요. 프론트엔드 개발자 이은지입니다. <br>
                     6개월간의 프론트엔드 국비과정을 밟아오면서 마크업 및 반응형 웹과 javascript를 이용한 동적 웹페이지를 만들고, 개인적인 프로젝트도 만들면서 개발역량을 쌓아왔습니다.
@@ -171,6 +176,7 @@
                             <div class="project_cont">
                                 <span>Video Sharing Site</span>
                                 <div class="projectBtn">
+                                    <a class="jsWetubeButton">Preview</a>
                                     <a href="https://github.com/eunjitech/wetube" target="_blank">Github</a>
                                 </div>
                             </div>
@@ -301,7 +307,7 @@
                 <li>ⓒ 2021 이은지 all rights reserved.</li>
             </ul>
             <ul class="sns">
-                <li><a href="https://github.com/eunjitech" title="깃허브 바로가기" target="_blank"><img src="img/github.png"
+                <li><a href="https://github.com/eunjitech/eunjitech.github.io" title="깃허브 바로가기" target="_blank"><img src="img/github.png"
                             alt="sns"></a></li>
                 <li><a href="mailto:eunjitech@gmail.com" title="메일 보내기" target="_blank"><img src="img/email.png" alt="sns"></a></li>
                 <li><a href="https://www.notion.so/eunjitech/Data-Hunter-d8e4f0e648b14fceabeb4fd953b0a1f7" title="노션 바로가기" target="_blank"><img src="img/notion.png" alt="sns"></a></li>
@@ -309,6 +315,7 @@
         </div>
     </footer>
     <script src="js/weather.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
